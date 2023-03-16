@@ -1,0 +1,84 @@
+<!DOCTYPE >
+<html>
+  <head></head>
+  <body>
+    <div class="container">
+      <h1 id="title">What are your movie habits?</h1>
+      <p id="description">
+        Tell us everything about your movie watching habits
+      </p>
+      <form id="survey-form" action="/submit-form" method="post">
+        <label for="name" id="name-label">Name</label
+        ><input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+        <label for="email" id="email-label">Email</label
+        ><input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="your email"
+          required
+        />
+        <label for="number" id="number-label">Age: </label
+        ><input
+          type="number"
+          id="number"
+          min="10"
+          max="120"
+          placeholder="Your age"
+        />
+        <label for="pick-genre">Pick your favorite movie genre</label>
+        <select name="genre" id="dropdown">
+          <option value="">-- pick a movie genre --</option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+
+        <p>What is the best place to watch a movie</p>
+        <label for="movie-theater">Movie Theater</label
+        ><input
+          type="radio"
+          id="movie-theater"
+          name="place-movie"
+          value="movie-theater"
+        />
+        <label for="home">Home</label
+        ><input type="radio" id="home" name="place-movie" value="home" />
+        <label for="bedroom">Bedroom</label
+        ><input type="radio" id="bedroom" name="place-movie" value="bedroom" />
+
+        <p>What do you like to eat while you wathc a movie?</p>
+        <label for="popcorn">Popcorn</label
+        ><input type="checkbox" id="popcorn" name="to-eat" value="popcorn" />
+        <label for="candy">Candy</label
+        ><input type="checkbox" id="candy" name="to-eat" value="candy" />
+        <label for="chips">Chips</label
+        ><input type="checkbox" id="chips" name="to-eat" value="chips" />
+        <label for="chocolate">Chocolate</label
+        ><input
+          type="checkbox"
+          id="chocolate"
+          name="to-eat"
+          value="chocolate"
+        />
+
+        <p>Tell us what are your top 5 favorite movies:</p>
+        <textarea
+          name="fav-movies"
+          id="survey-form"
+          cols="30"
+          rows="10"
+        ></textarea>
+
+        <input type="submit" id="submit" class="button" />
+      </form>
+    </div>
+  </body>
+</html>
